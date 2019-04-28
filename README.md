@@ -36,23 +36,21 @@ pip3 install -r requirements.txt
 ```
 or
 
-```
+
 pip install -r requirements.txt
-```
 
 and
 
-```
 sudo apt-get install sox
-```
+
 
 ### Run each step individually
 
 #### Download and preprocess dataset
 To download the dataset, issue the following command:
-```
+
 python data/download.py
-```
+
 Arguments:
   * `--data_dir`: Directory where to download and save the preprocessed data. By default, it is `/tmp/librispeech_data`.
 
@@ -60,9 +58,9 @@ Use the `--help` or `-h` flag to get a full list of possible arguments.
 
 #### Train and evaluate model
 To train and evaluate the model, issue the following command:
-```
+
 python deep_speech.py
-```
+
 Arguments:
   * `--model_dir`: Directory to save model training checkpoints. By default, it is `/tmp/deep_speech_model/`.
   * `--train_data_dir`: Directory of the training dataset.
@@ -72,8 +70,7 @@ There are other arguments about DeepSpeech2 model and training/evaluation proces
 rguments with detailed descriptions.
 ### Run the benchmark
 A shell script [run_deep_speech.sh](run_deep_speech.sh) is provided to run the whole pipeline with default parameters. Issue the following comman
-d to run the benchmark:```
-sh run_deep_speech.sh
-```
+d to run the benchmark:
+
 Note by default, the training dataset in the benchmark include train-clean-100, train-clean-360 and train-other-500, and the evaluation dataset i
 nclude dev-clean and dev-other.
