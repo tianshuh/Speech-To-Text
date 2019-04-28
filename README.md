@@ -37,7 +37,7 @@ pip3 install -r requirements.txt
 or
 ```
 pip install -r requirements.txt
-
+```
 and
 ```
 sudo apt-get install sox
