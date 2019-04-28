@@ -35,10 +35,13 @@ First install shared dependencies before running the code. Issue the following c
 pip3 install -r requirements.txt
 ```
 or
+
 ```
 pip install -r requirements.txt
 ```
+
 and
+
 ```
 sudo apt-get install sox
 ```
